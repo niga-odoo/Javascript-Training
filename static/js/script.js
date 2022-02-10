@@ -6,12 +6,20 @@ display = () => {
     window.location.href = '/products';
 }
 
-// // dispatchEvent
+// dispatchEvent
 // let btn = document.querySelector('.btn');
 
 // btn.addEventListener('clicks', function () {
-//     alert('Mouse Clicked');
+//     window.alert('Mouse Clicked');
 // });
 
 // let clickEvent = new Event('clicks');
 // btn.dispatchEvent(clickEvent);
+
+// Waiting for Intervals
+setInterval(myFunction, 1000);
+
+function myFunction() {
+  let d = new Date();
+  return d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+}
